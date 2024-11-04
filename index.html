@@ -96,7 +96,7 @@ function startTime() {
   let M = months[today.getMonth()];
   let y = today.getFullYear();
   let am_pm = today.toLocaleTimeString(); // 12:48:20 PM
-  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + "<br><h2>" + am_pm + "</h2>";
+  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + "<br> <h2>" + am_pm + "</h2>";
   
   setTimeout(startTime, 1000);
 }
