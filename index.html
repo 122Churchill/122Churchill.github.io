@@ -37,15 +37,6 @@ footer {
   text-align: center;
   color: black;
 }
-/*Iframe { 
-            border: 3px dotted; 
-            width: 300px; 
-            height: 100px; 
-            font-family: verdana;
-            font-size: 200px;
-            text-align: center;
-} 
-*/
 
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -70,26 +61,6 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
 .active {
   background-color: #717171;
 }
@@ -105,10 +76,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
 </style>
 </head>
 
@@ -128,18 +95,22 @@ function startTime() {
   let M = months[today.getMonth()];
   let y = today.getFullYear();
   let am_pm = today.toLocaleTimeString(); // 12:48:20 PM
-  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + " <br><br> " + "<h2>" am_pm "</h2>";
+  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + " <br><br> " + am_pm;
   
   setTimeout(startTime, 1000);
 }
 
 </script>
 
+  
 <!-- ADD ANY URGENT/EMERGENCY MESSAGE BETWEEN <h1> ... </h1> below -->
+  
   <h1>This is an URGENT message</h1>
+  
 <!-- ADD ANY URGENT/EMERGENCY MESSAGE BETWEEN <h1> ... </h1> above -->
 
-  <h2>What's On</h2>
+  
+<h2>What's On</h2>
   
 <div>
 
@@ -171,13 +142,6 @@ function startTime() {
 
 </div>
 <br>
-<!--
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
- -->
 <script>
 let slideIndex = 0;
 showSlides();
@@ -185,17 +149,12 @@ showSlides();
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
-  // let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
+    for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
-  //for (i = 0; i < dots.length; i++) {
-  //  dots[i].className = dots[i].className.replace(" active", "");
-  //}
-  slides[slideIndex-1].style.display = "block";  
-  //dots[slideIndex-1].className += " active";
+    slides[slideIndex-1].style.display = "block";  
   setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
 </script>
