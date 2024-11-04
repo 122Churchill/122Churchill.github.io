@@ -10,7 +10,7 @@ body {
   background-color: powderblue;
 }
 h1 {
-  color: white;
+  color: red;
   text-align: center;
   font-size: 50px;
 }
@@ -33,9 +33,9 @@ div {
   
 footer {
   font-family: verdana;
-  font-size: 50px;
+  font-size: 10px;
   text-align: center;
-  color: red;
+  color: black;
 }
 /*Iframe { 
             border: 3px dotted; 
@@ -114,8 +114,6 @@ img {vertical-align: middle;}
 
 <body onload="startTime()">
 
-<!-- <h1>Crofton Downs Retirement Village</h1> -->
-
 <div id="txt"></div>
 <br>
   
@@ -130,12 +128,16 @@ function startTime() {
   let M = months[today.getMonth()];
   let y = today.getFullYear();
   let am_pm = today.toLocaleTimeString(); // 12:48:20 PM
-  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + " <br> " + am_pm;
+  document.getElementById('txt').innerHTML = day + " " + d + " " + M + " " + y + " <br><br> " + "<h2>" am_pm "</h2>";
   
   setTimeout(startTime, 1000);
 }
 
 </script>
+
+<!-- ADD ANY URGENT/EMERGENCY MESSAGE BETWEEN <h1> ... </h1> below -->
+  <h1>This is an URGENT notice</h1>
+<!-- ADD ANY URGENT/EMERGENCY MESSAGE BETWEEN <h1> ... </h1> above -->
 
   <h2>What's On</h2>
   
@@ -199,7 +201,7 @@ function showSlides() {
 </script>
 
 
-<footer>This is an EMERGENCY notice footer</footer>
+<footer>Digital Signage kindly donated by Keith Warren 2024</footer>
 
 
 </body>
