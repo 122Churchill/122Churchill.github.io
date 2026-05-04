@@ -85,11 +85,7 @@ img {vertical-align: middle;}
 }
 
 </style>
-</head><div class="mySlides fade">
-  <img src="/images/VegetarianDinner.png" style="width:620px">
-</div>
-
-
+</head>
 
 <body onload="startTime()">
 
@@ -98,7 +94,9 @@ img {vertical-align: middle;}
 <script>
 function startTime() {
   const today = new Date();
-  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];  
+  const months = ["January","February","March","April","May","June"<div class="mySlides fade">
+  <img src="/images/VegetarianDinner.png" style="width:620px">
+</div>,"July","August","September","October","November","December"];  
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[today.getDay()];  
   let d = today.getDate();
