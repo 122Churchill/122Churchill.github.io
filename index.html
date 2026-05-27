@@ -35,7 +35,12 @@ footer {
   font-size: 10px;
   text-align: center;
   color: black;
-   
+   position: fixed;
+   left: 0;
+   bottom: 50;
+   width: 100%;
+}
+
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -94,9 +99,7 @@ img {vertical-align: middle;}
 <script>
 function startTime() {
   const today = new Date();
-  const months = ["January","February","March","April","May","June"<div class="mySlides fade">
-  <img src="/images/VegetarianDinner.png" style="width:620px">
-</div>,"July","August","September","October","November","December"];  
+  const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];  
   const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let day = days[today.getDay()];  
   let d = today.getDate();
@@ -126,10 +129,6 @@ function startTime() {
 <!--  width: portrait 620px, landscape 877px -->
 
 <div class="mySlides fade">
-  <img src="/images/ChrisFinlayson.png" style="width:877px">
-</div>
-
-<div class="mySlides fade">
   <img src="/images/StLukes.png" style="width:620px">
 </div>
 
@@ -157,15 +156,14 @@ function startTime() {
 
 <!--  dots " class="dot"  - one for each image -->  
 <div style="text-align:center">
-
-  <span class="dot"></span>  
-  <span class="dot"></span>  
+  
   <span class="dot"></span> 
   <span class="dot"></span>  
   <span class="dot"></span> 
+  <span class="dot"></span>  
   <span class="dot"></span> 
   <span class="dot"></span> 
-    
+  
 </div>
 </div>
 <br>
@@ -193,8 +191,6 @@ function showSlides() {
 </script>
 
   <footer><br>Digital Signage kindly donated by Keith Warren 2024</footer>
-  
-
 
 </body>
 </html> 
